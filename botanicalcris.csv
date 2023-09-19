@@ -1,0 +1,6 @@
+﻿NAMES,LONGITUDE,LATITUDE,Random Coordinates (X1/Longitude),Random Coordinates (Y1Latitude),,ABS(X2-X1),ABS(Y2-Y1),X+Y,ADDRESS,CITY,ZIP,
+New York Botanical Garden,-73.8774,40.8623,-73.8759,40.8617,,0.0015,0.0006,0.0022,200th Street and Kazimiroff Blvd,Bronx,10458,
+Brooklyn Botanic Garden,-73.9646,40.6686,-73.9625,40.6681,,0.0021,0.0005,0.0026,1000 Washington Ave,Brooklyn,11225,
+Queens Botanical Garden,-73.8262,40.7512,-73.8250,40.7500,,0.0012,0.0012,0.0024,43-50 Main Street,Flushing,11355,
+Snug Harbor Cultural Center and Botanical Garden,-74.1027,40.6434,-74.1001,40.6423,,0.0026,0.0011,0.0037,1000 Richmond Terrace,Staten Island,10310,
+,,,,,,,,,,,,
