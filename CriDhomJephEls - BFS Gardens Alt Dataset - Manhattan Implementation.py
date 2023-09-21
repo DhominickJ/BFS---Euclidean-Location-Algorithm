@@ -9,7 +9,6 @@ df = pd.read_csv('botanicalcris.csv', skipinitialspace=True, usecols=fields)
 
 # Define a function to calculate Euclidean distance
 def euclidean_distance(point1, point2):
-    sum = 0
     for a, b in zip(point1, point2):
         sum += (a - b) ** 2
     sum = math.sqrt(sum)
@@ -23,6 +22,7 @@ def manhattan_distance(point1, point2):
         absolute_difference = abs(difference)
         distance += absolute_difference
     return distance
+
 # TODO: DONE Implemented Manual Sorting with Bubble Sort 
 def bubblesort(distances):
     for i in range(len(distances)):
@@ -31,7 +31,7 @@ def bubblesort(distances):
                 distances[j], distances[j + 1] = distances[j + 1], distances[j]
     return distances
 
-# Define a function to find the k nearest neighbors using Euclidean distance and bfs TODO: DONE Implement the Bubble Sort for Alternative Sorting Algorithm
+# Define a function to find the k nearest neighbors using Euclidean distance and Manhattan Distance and bfs TODO: DONE Implement the Bubble Sort for Alternative Sorting Algorithm
 def get_euclidean_neighbors(df, test_row, k):
     distances = []
     for index, row in df.iterrows():
