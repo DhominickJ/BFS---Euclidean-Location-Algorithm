@@ -9,6 +9,7 @@ df = pd.read_csv('botanicalcris.csv', skipinitialspace=True, usecols=fields)
 
 # Define a function to calculate Euclidean distance
 def euclidean_distance(point1, point2):
+    sum = 0
     for a, b in zip(point1, point2):
         sum += (a - b) ** 2
     sum = math.sqrt(sum)
@@ -71,7 +72,7 @@ for i in range(k):
 # Create a graph object
 G = nx.Graph()
 
-# Add nodes (parks) to the graph
+# Add nodes (parks) to the graph with BFS Integration
 for neighbor in neighbors:
     G.add_node(neighbor['NAMES'])
 
