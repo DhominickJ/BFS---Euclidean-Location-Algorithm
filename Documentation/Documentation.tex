@@ -1,0 +1,80 @@
+\documentclass[letterpaper, 12pt]{article}
+\usepackage[margin=1in]{geometry}
+\author{Billena, Artacho, Constantino, Torre}
+\title{Representing Paths to Parks using K-Nearest Neighbor}
+\begin{document}
+    \maketitle
+    \section*{Introducton}  
+    % Statement of the Problem
+    % What is KNN Algorithm
+    % Process of KNN Algorithm
+    % What is Informed Search
+    % What is Paths between the Data Sets
+    % Cite References
+    \textbf{Have you ever wondered how your brain seems to reason out the path that you need to take in order to reach a place?} 
+    \par{Is it by using landmarks as to instruct you as to where you should meet? Is it by using a map to know the nearest location of that landmark?} 
+    \par We are inclined to use the nearest neighboring places in order to reach another place right? Since it is the most "known" location from the place we can meet up. Which is why, I personally give KNN another distinguishing meaning which is "Know the Nearest Neighbor" Classification Algorithm. I think you're thinking that it should be KtNN right? Yes, but hey what's this, there's a popping up animation of how it works. (insert animation for knn - to be animated)
+    \par \textbf{K-Nearest Neighbor} is a supervised machine learning algorithm that can be used to solve both classification and regression tasks. Classification? Regression? An example would you as a person, if you were to be classified, how would you be classified and related to that group?
+    \par \textbf{Classification} is simply how does a person or an object belong to a group, it's characteristics such as interests, classes taken, preferences over food, etch. \textbf{Regression} on the other hand, is how you are \textbf{related} to that particular group based on either your or their influence on you.
+
+    \section*{Methodology / Process}
+    % Provide flowchart or pseudocode or formula
+    % Describe the steps from flowchart or pseudocode or formula
+    % On our case, the implementation of Manhattan and Euclidean
+    % Evaluation Metrics for Calculating Time Complexities
+    \subsection*{Finding the K-Nearest Neighbors}
+        \par Thinking back about the process that landmarks are used in order to determine how close we are to a certain place, we need to measure it to create an accurate representation of how far each location is to each other. 
+    \subsection*{Distance Measurement}
+        \section*{Euclidean Distance} 
+        \textbf{Euclidean Distance} is an algorithm that we can think of like a triangle ruler that we can use in order to measure the distance between these two points. 
+        \begin{center}
+            \begin{math}
+               Euclidean = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}
+            \end{math}
+        \end{center}
+            \par Euclidean Algorithm is commonly found in finding the greatest common divisor between two given numbers which is enclosed by the parenthesis and squared as to why it is squared, well as said earlier it is a triangular ruler where the rules of the \textbf{Pythagorean Equation} matters in order to find the hypotenuse of the triangle which is the longest part of triangle which has the formula: 
+            \begin{center}
+                \begin{math}
+                    x^2 + y^2 = z^2
+                \end{math} 
+            \end{center}
+        In our case it is used to represent the \textbf{displacement} which is the Nearest Shortcut to reach that location. Another point to consider is why do we need to square root it, is there any particular reason why? Square rooting the results will give us two width and height to measure the triangle that we will be using as our ruler to measure the distance which is shown below: (insert triangle diagram)
+    \section*{Manhattan Algorithm}
+        \textbf{Manhattan Distance} measures the distance as the sum of the absolute differences between the coordinates of the points. It is named after the grid-like layout of streets in Manhattan, where the distance between two points is the sum of the absolute differences in their x and y coordinates. (insert grid structures here)
+        \begin{center}
+            \begin{math}
+                Manhattan = |x2 - x1| + |y2 - y1|
+            \end{math}
+        \end{center}
+    
+    \section*{K-Nearest Neighbor Implementation}
+        \textbf{Problem: How can we use this knowledge in order to solve real world problems?}
+        \begin{itemize}
+            \item Solve for the Location of the Parks that are near to each other.
+            \item Solve for the location of the user which is using the parks as the landmark in asking a friend for directions.
+            \item Know where a friend is using the landmarks that he / she is currently seeing.
+            \item Know the path to take when visiting all of the parks and representing the path that is efficient and effective for fares to save money
+            \item A much more endless possibilities for searching for a more applications especially in location searching.
+        \end{itemize}
+        \par There are a lot of possible implementation in knowing the nearest neighbor or the KNN Classification problems but the problem that we have focused in knowing is \textbf{ Knowing the path to take when visiting all of the parks and representing the path that is efficient and effective for fares to save money} because we want to make most of our time and money.
+        \subsection{Steps in Implementation}
+            \begin{enumerate}
+                \item Import the Packages to Represent the Data:
+                \begin{enumerate}
+                    \item Pandas \par Used in order to read the data which is a .csv file(comma-seperated values) to the model
+                    \item Networkx \par Used to represent the relationship of the data points with the 
+                    \item Matplotlib \par Used to show the representation made by the Networkx package
+                \end{enumerate}
+            \end{enumerate}
+        \subsection*{Implementation}
+            \par 
+    \section*{Results}    % Results from the method 1
+    % Results from method 2
+    % Visuals and Diagrams for explanation
+    \section*{References}
+    \begin{itemize}
+        \item https://towardsdatascience.com/k-nearest-neighbors-knn-explained-cbc31849a7e3
+        \item https://saturncloud.io/blog/algorithm-for-minimum-manhattan-distance-a-guide-for-data-scientists/
+    \end{itemize}
+
+\end{document}
